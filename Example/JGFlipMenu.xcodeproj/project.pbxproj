@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE4953ED1A4C589900106ED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4953EC1A4C589900106ED7 /* AppDelegate.swift */; };
+		CE4953F21A4C589900106ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4953F01A4C589900106ED7 /* Main.storyboard */; };
+		CE4953F41A4C589900106ED7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4953F31A4C589900106ED7 /* Images.xcassets */; };
+		CE4953F71A4C589900106ED7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4953F51A4C589900106ED7 /* LaunchScreen.xib */; };
+		CE4954031A4C589900106ED7 /* JGFlipMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4954021A4C589900106ED7 /* JGFlipMenuTests.swift */; };
+		CE49540E1A4C58B800106ED7 /* JGFlipMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49540C1A4C58B800106ED7 /* JGFlipMenuController.swift */; };
+		CE49540F1A4C58B800106ED7 /* JGFlipMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49540D1A4C58B800106ED7 /* JGFlipMenuItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE4953FD1A4C589900106ED7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE4953DF1A4C589900106ED7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4953E61A4C589900106ED7;
+			remoteInfo = JGFlipMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE4953E71A4C589900106ED7 /* JGFlipMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JGFlipMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4953EB1A4C589900106ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4953EC1A4C589900106ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE4953F11A4C589900106ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE4953F31A4C589900106ED7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE4953F61A4C589900106ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CE4953FC1A4C589900106ED7 /* JGFlipMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JGFlipMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4954011A4C589900106ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4954021A4C589900106ED7 /* JGFlipMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGFlipMenuTests.swift; sourceTree = "<group>"; };
+		CE49540C1A4C58B800106ED7 /* JGFlipMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGFlipMenuController.swift; sourceTree = "<group>"; };
+		CE49540D1A4C58B800106ED7 /* JGFlipMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGFlipMenuItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE4953E41A4C589900106ED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4953F91A4C589900106ED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE4953DE1A4C589900106ED7 = {
+			isa = PBXGroup;
+			children = (
+				CE4953E91A4C589900106ED7 /* JGFlipMenu */,
+				CE4953FF1A4C589900106ED7 /* JGFlipMenuTests */,
+				CE4953E81A4C589900106ED7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE4953E81A4C589900106ED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE4953E71A4C589900106ED7 /* JGFlipMenu.app */,
+				CE4953FC1A4C589900106ED7 /* JGFlipMenuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE4953E91A4C589900106ED7 /* JGFlipMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CE4953EC1A4C589900106ED7 /* AppDelegate.swift */,
+				CE49540C1A4C58B800106ED7 /* JGFlipMenuController.swift */,
+				CE49540D1A4C58B800106ED7 /* JGFlipMenuItem.swift */,
+				CE4953F01A4C589900106ED7 /* Main.storyboard */,
+				CE4953F31A4C589900106ED7 /* Images.xcassets */,
+				CE4953F51A4C589900106ED7 /* LaunchScreen.xib */,
+				CE4953EA1A4C589900106ED7 /* Supporting Files */,
+			);
+			path = JGFlipMenu;
+			sourceTree = "<group>";
+		};
+		CE4953EA1A4C589900106ED7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE4953EB1A4C589900106ED7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE4953FF1A4C589900106ED7 /* JGFlipMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4954021A4C589900106ED7 /* JGFlipMenuTests.swift */,
+				CE4954001A4C589900106ED7 /* Supporting Files */,
+			);
+			path = JGFlipMenuTests;
+			sourceTree = "<group>";
+		};
+		CE4954001A4C589900106ED7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE4954011A4C589900106ED7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE4953E61A4C589900106ED7 /* JGFlipMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4954061A4C589900106ED7 /* Build configuration list for PBXNativeTarget "JGFlipMenu" */;
+			buildPhases = (
+				CE4953E31A4C589900106ED7 /* Sources */,
+				CE4953E41A4C589900106ED7 /* Frameworks */,
+				CE4953E51A4C589900106ED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JGFlipMenu;
+			productName = JGFlipMenu;
+			productReference = CE4953E71A4C589900106ED7 /* JGFlipMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE4953FB1A4C589900106ED7 /* JGFlipMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4954091A4C589900106ED7 /* Build configuration list for PBXNativeTarget "JGFlipMenuTests" */;
+			buildPhases = (
+				CE4953F81A4C589900106ED7 /* Sources */,
+				CE4953F91A4C589900106ED7 /* Frameworks */,
+				CE4953FA1A4C589900106ED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4953FE1A4C589900106ED7 /* PBXTargetDependency */,
+			);
+			name = JGFlipMenuTests;
+			productName = JGFlipMenuTests;
+			productReference = CE4953FC1A4C589900106ED7 /* JGFlipMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE4953DF1A4C589900106ED7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Jeff Greenberg";
+				TargetAttributes = {
+					CE4953E61A4C589900106ED7 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CE4953FB1A4C589900106ED7 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CE4953E61A4C589900106ED7;
+					};
+				};
+			};
+			buildConfigurationList = CE4953E21A4C589900106ED7 /* Build configuration list for PBXProject "JGFlipMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE4953DE1A4C589900106ED7;
+			productRefGroup = CE4953E81A4C589900106ED7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE4953E61A4C589900106ED7 /* JGFlipMenu */,
+				CE4953FB1A4C589900106ED7 /* JGFlipMenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE4953E51A4C589900106ED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4953F21A4C589900106ED7 /* Main.storyboard in Resources */,
+				CE4953F71A4C589900106ED7 /* LaunchScreen.xib in Resources */,
+				CE4953F41A4C589900106ED7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4953FA1A4C589900106ED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE4953E31A4C589900106ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4953ED1A4C589900106ED7 /* AppDelegate.swift in Sources */,
+				CE49540E1A4C58B800106ED7 /* JGFlipMenuController.swift in Sources */,
+				CE49540F1A4C58B800106ED7 /* JGFlipMenuItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4953F81A4C589900106ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4954031A4C589900106ED7 /* JGFlipMenuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE4953FE1A4C589900106ED7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4953E61A4C589900106ED7 /* JGFlipMenu */;
+			targetProxy = CE4953FD1A4C589900106ED7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE4953F01A4C589900106ED7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4953F11A4C589900106ED7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE4953F51A4C589900106ED7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4953F61A4C589900106ED7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE4954041A4C589900106ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE4954051A4C589900106ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE4954071A4C589900106ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JGFlipMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE4954081A4C589900106ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JGFlipMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE49540A1A4C589900106ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JGFlipMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JGFlipMenu.app/JGFlipMenu";
+			};
+			name = Debug;
+		};
+		CE49540B1A4C589900106ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JGFlipMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JGFlipMenu.app/JGFlipMenu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE4953E21A4C589900106ED7 /* Build configuration list for PBXProject "JGFlipMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4954041A4C589900106ED7 /* Debug */,
+				CE4954051A4C589900106ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4954061A4C589900106ED7 /* Build configuration list for PBXNativeTarget "JGFlipMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4954071A4C589900106ED7 /* Debug */,
+				CE4954081A4C589900106ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE4954091A4C589900106ED7 /* Build configuration list for PBXNativeTarget "JGFlipMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE49540A1A4C589900106ED7 /* Debug */,
+				CE49540B1A4C589900106ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE4953DF1A4C589900106ED7 /* Project object */;
+}

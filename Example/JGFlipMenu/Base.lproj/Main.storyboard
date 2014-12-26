@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Flip Menu Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="JGFlipMenuController" customModule="JGFlipMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNp-5g-vmW">
+                                <rect key="frame" x="58" y="204" width="260" height="260"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYL-7L-d1G" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
+                                        <rect key="frame" x="140" y="20" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Terms of Use"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="panelFrontColor">
+                                                <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
+                                                <color key="value" red="0.066666666669999999" green="0.67495265149999994" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontBackColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um0-fy-MIr" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="About"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="panelFrontColor">
+                                                <color key="value" red="0.95294117647058818" green="0.83529411764705885" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
+                                                <color key="value" red="0.066666666666666666" green="0.67495265151515149" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontBackColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjB-LK-fhv" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
+                                        <rect key="frame" x="140" y="140" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Privacy Policy"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="panelFrontColor">
+                                                <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
+                                                <color key="value" red="0.066666666669999999" green="0.67495265149999994" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontBackColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHc-Xf-d8i" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="140" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Tutorial"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="backTitle" value="custom back side"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="panelFrontColor">
+                                                <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
+                                                <color key="value" red="0.066666666669999999" green="0.67495265149999994" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontBackColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.078431372549019607" green="0.11764705882352941" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rYL-7L-d1G" firstAttribute="leading" secondItem="um0-fy-MIr" secondAttribute="trailing" constant="20" id="1xW-dh-pCF"/>
+                                    <constraint firstItem="OjB-LK-fhv" firstAttribute="top" secondItem="rYL-7L-d1G" secondAttribute="bottom" constant="20" id="2VG-rr-Nhy"/>
+                                    <constraint firstItem="bHc-Xf-d8i" firstAttribute="top" secondItem="um0-fy-MIr" secondAttribute="bottom" constant="20" id="6tg-NU-ybT"/>
+                                    <constraint firstItem="OjB-LK-fhv" firstAttribute="width" secondItem="rYL-7L-d1G" secondAttribute="width" id="7fM-Lf-G3z"/>
+                                    <constraint firstItem="OjB-LK-fhv" firstAttribute="width" secondItem="bHc-Xf-d8i" secondAttribute="width" id="8z6-Ln-Y0i"/>
+                                    <constraint firstItem="OjB-LK-fhv" firstAttribute="height" secondItem="um0-fy-MIr" secondAttribute="height" id="Al1-Ix-4We"/>
+                                    <constraint firstItem="OjB-LK-fhv" firstAttribute="width" secondItem="um0-fy-MIr" secondAttribute="width" id="KFY-v8-vSA"/>
+                                    <constraint firstItem="um0-fy-MIr" firstAttribute="top" secondItem="fNp-5g-vmW" secondAttribute="top" constant="20" id="MYh-Ig-T48"/>
+                                    <constraint firstItem="rYL-7L-d1G" firstAttribute="top" secondItem="fNp-5g-vmW" secondAttribute="top" constant="20" id="ND6-pY-iPW"/>
+                                    <constraint firstItem="bHc-Xf-d8i" firstAttribute="top" secondItem="um0-fy-MIr" secondAttribute="bottom" constant="20" id="TDV-Gx-KEF"/>
+                                    <constraint firstItem="OjB-LK-fhv" firstAttribute="height" secondItem="bHc-Xf-d8i" secondAttribute="height" id="Y0t-AP-Ze8"/>
+                                    <constraint firstAttribute="trailing" secondItem="rYL-7L-d1G" secondAttribute="trailing" constant="20" id="ZXG-de-ydc"/>
+                                    <constraint firstAttribute="width" constant="260" id="ccF-ny-hw5"/>
+                                    <constraint firstItem="OjB-LK-fhv" firstAttribute="leading" secondItem="bHc-Xf-d8i" secondAttribute="trailing" constant="20" id="dIL-qq-pSP"/>
+                                    <constraint firstItem="bHc-Xf-d8i" firstAttribute="top" secondItem="fNp-5g-vmW" secondAttribute="top" constant="140" id="e2G-eA-TIz"/>
+                                    <constraint firstItem="OjB-LK-fhv" firstAttribute="height" secondItem="rYL-7L-d1G" secondAttribute="height" id="p0l-zt-DhJ"/>
+                                    <constraint firstItem="bHc-Xf-d8i" firstAttribute="leading" secondItem="fNp-5g-vmW" secondAttribute="leading" constant="20" id="pnc-5U-X0B"/>
+                                    <constraint firstItem="um0-fy-MIr" firstAttribute="leading" secondItem="fNp-5g-vmW" secondAttribute="leading" constant="20" id="rcl-or-fBW"/>
+                                    <constraint firstAttribute="height" constant="260" id="yA5-3G-0lc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="fNp-5g-vmW" secondAttribute="centerY" id="4MT-om-ZaC"/>
+                            <constraint firstAttribute="centerX" secondItem="fNp-5g-vmW" secondAttribute="centerX" id="Ea4-Ql-aEL"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231.5" y="397.5"/>
+        </scene>
+    </scenes>
+</document>
