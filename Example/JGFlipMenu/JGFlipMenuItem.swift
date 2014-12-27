@@ -21,25 +21,22 @@ protocol JGFlipMenuItemDelegate{
     var frontSideTitle: UITextView!
     var backSideTitle: UITextView!
     
-    let defaultTitle = "Title"
-    let defaultBackTitle = "back side"
-    
     var delegate: JGFlipMenuItemDelegate?
     
     var menuItemFrame = CGRect(x: 0, y: 0, width: 100, height: 100)
     
     var frontFacing = true
     
-    @IBInspectable var title: String? {
+    @IBInspectable var title: String = "Title" {
         didSet {
-            frontSideTitle.text = title!
+            frontSideTitle.text = title
             frontSideTitle = setTextConditionals(frontSideTitle)
         }
     }
     
-    @IBInspectable var backTitle: String? {
+    @IBInspectable var backTitle: String = "back side" {
         didSet {
-            backSideTitle.text = backTitle!
+            backSideTitle.text = backTitle
             backSideTitle = setTextConditionals(backSideTitle)
         }
     }
@@ -111,11 +108,11 @@ protocol JGFlipMenuItemDelegate{
         
         backSideView.frame = menuItemFrame
         backSideView.backgroundColor = UIColor.whiteColor()
-        backSideTitle = makeText(defaultBackTitle)
+        backSideTitle = makeText(backTitle)
         
         frontSideView.frame = menuItemFrame
         frontSideView.backgroundColor = UIColor.whiteColor()
-        frontSideTitle = makeText(defaultTitle)
+        frontSideTitle = makeText(title)
         
         self.backSideView.addSubview(backSideTitle)
         self.addSubview(backSideView)
@@ -141,7 +138,6 @@ protocol JGFlipMenuItemDelegate{
         textView.font = boldFont ? UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline) : UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
         textView.textAlignment = centerHorizontal ? .Center : .Left
         textView.frame = centerVertical ? resizeTextViewFrameToCenter(textView, fitToFrame: menuItemFrame) : menuItemFrame
-        
         
         return textView
     }
