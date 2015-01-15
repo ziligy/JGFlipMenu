@@ -14,6 +14,11 @@
 		CE4954031A4C589900106ED7 /* JGFlipMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4954021A4C589900106ED7 /* JGFlipMenuTests.swift */; };
 		CE49540E1A4C58B800106ED7 /* JGFlipMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49540C1A4C58B800106ED7 /* JGFlipMenuController.swift */; };
 		CE49540F1A4C58B800106ED7 /* JGFlipMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49540D1A4C58B800106ED7 /* JGFlipMenuItem.swift */; };
+		CE7E8D641A504791006BD80D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E8D631A504791006BD80D /* AboutViewController.swift */; };
+		CE7E8D661A5047B6006BD80D /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E8D651A5047B6006BD80D /* PrivacyPolicyViewController.swift */; };
+		CE7E8D681A5047D9006BD80D /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E8D671A5047D9006BD80D /* TutorialViewController.swift */; };
+		CEA5EB4A1A4F3C3300F28A69 /* TermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5EB491A4F3C3300F28A69 /* TermsOfUseViewController.swift */; };
+		CED3E9C41A603742007573A0 /* JGTransitionExpandContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3E9C31A603742007573A0 /* JGTransitionExpandContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		CE4954021A4C589900106ED7 /* JGFlipMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGFlipMenuTests.swift; sourceTree = "<group>"; };
 		CE49540C1A4C58B800106ED7 /* JGFlipMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGFlipMenuController.swift; sourceTree = "<group>"; };
 		CE49540D1A4C58B800106ED7 /* JGFlipMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGFlipMenuItem.swift; sourceTree = "<group>"; };
+		CE7E8D631A504791006BD80D /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CE7E8D651A5047B6006BD80D /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		CE7E8D671A5047D9006BD80D /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		CEA5EB491A4F3C3300F28A69 /* TermsOfUseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsOfUseViewController.swift; sourceTree = "<group>"; };
+		CED3E9C31A603742007573A0 /* JGTransitionExpandContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGTransitionExpandContract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +92,9 @@
 				CE4953EC1A4C589900106ED7 /* AppDelegate.swift */,
 				CE49540C1A4C58B800106ED7 /* JGFlipMenuController.swift */,
 				CE49540D1A4C58B800106ED7 /* JGFlipMenuItem.swift */,
+				CED3E9C31A603742007573A0 /* JGTransitionExpandContract.swift */,
 				CE4953F01A4C589900106ED7 /* Main.storyboard */,
+				CECC12181A60520B00324E75 /* Demo View Controllers */,
 				CE4953F31A4C589900106ED7 /* Images.xcassets */,
 				CE4953F51A4C589900106ED7 /* LaunchScreen.xib */,
 				CE4953EA1A4C589900106ED7 /* Supporting Files */,
@@ -113,6 +125,17 @@
 				CE4954011A4C589900106ED7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CECC12181A60520B00324E75 /* Demo View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E8D671A5047D9006BD80D /* TutorialViewController.swift */,
+				CE7E8D651A5047B6006BD80D /* PrivacyPolicyViewController.swift */,
+				CEA5EB491A4F3C3300F28A69 /* TermsOfUseViewController.swift */,
+				CE7E8D631A504791006BD80D /* AboutViewController.swift */,
+			);
+			name = "Demo View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +239,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4953ED1A4C589900106ED7 /* AppDelegate.swift in Sources */,
+				CED3E9C41A603742007573A0 /* JGTransitionExpandContract.swift in Sources */,
+				CE7E8D681A5047D9006BD80D /* TutorialViewController.swift in Sources */,
 				CE49540E1A4C58B800106ED7 /* JGFlipMenuController.swift in Sources */,
+				CEA5EB4A1A4F3C3300F28A69 /* TermsOfUseViewController.swift in Sources */,
+				CE7E8D661A5047B6006BD80D /* PrivacyPolicyViewController.swift in Sources */,
+				CE7E8D641A504791006BD80D /* AboutViewController.swift in Sources */,
 				CE49540F1A4C58B800106ED7 /* JGFlipMenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JGFlipMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JGFlipMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +439,7 @@
 				CE4954081A4C589900106ED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE4954091A4C589900106ED7 /* Build configuration list for PBXNativeTarget "JGFlipMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +448,7 @@
 				CE49540B1A4C589900106ED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TV9-QQ-Ypu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Flip Menu Controller-->
@@ -28,7 +29,7 @@
                                                 <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
-                                                <color key="value" red="0.066666666669999999" green="0.67495265149999994" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,7 +51,7 @@
                                                 <color key="value" red="0.95294117647058818" green="0.83529411764705885" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
-                                                <color key="value" red="0.066666666666666666" green="0.67495265151515149" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,7 +73,7 @@
                                                 <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
-                                                <color key="value" red="0.066666666669999999" green="0.67495265149999994" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -95,7 +96,7 @@
                                                 <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
-                                                <color key="value" red="0.066666666669999999" green="0.67495265149999994" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -139,11 +140,337 @@
                             <constraint firstAttribute="centerX" secondItem="fNp-5g-vmW" secondAttribute="centerX" id="Ea4-Ql-aEL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="YUM-1v-jR8"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231.5" y="397.5"/>
+            <point key="canvasLocation" x="1537.5" y="312.5"/>
+        </scene>
+        <!--Terms Of Use View Controller-->
+        <scene sceneID="1Ww-Uy-T4Y">
+            <objects>
+                <viewController storyboardIdentifier="Terms of Use" useStoryboardIdentifierAsRestorationIdentifier="YES" id="llS-qK-GKN" customClass="TermsOfUseViewController" customModule="JGFlipMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AWr-JB-EQc"/>
+                        <viewControllerLayoutGuide type="bottom" id="YVw-lG-poz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Icl-WL-MM6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Use" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPT-NM-0zm">
+                                <rect key="frame" x="16" y="20" width="343" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYO-i4-pxy">
+                                <rect key="frame" x="16" y="49" width="343" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Copyright (c) 2015 Jeff Greenberg (https://github.com/ziligy)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xt-tT-ckD">
+                                <rect key="frame" x="33" y="16" width="30" height="30"/>
+                                <state key="normal" image="close-jg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="llS-qK-GKN" eventType="touchUpInside" id="GYq-d0-TjI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qPT-NM-0zm" firstAttribute="leading" secondItem="Icl-WL-MM6" secondAttribute="leadingMargin" id="7Vb-uP-EEu"/>
+                            <constraint firstItem="YVw-lG-poz" firstAttribute="top" secondItem="GYO-i4-pxy" secondAttribute="bottom" id="7q3-gM-Scc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qPT-NM-0zm" secondAttribute="trailing" id="Htt-26-X5j"/>
+                            <constraint firstItem="GYO-i4-pxy" firstAttribute="leading" secondItem="Icl-WL-MM6" secondAttribute="leadingMargin" id="Ml8-Ld-74z"/>
+                            <constraint firstItem="qPT-NM-0zm" firstAttribute="top" secondItem="AWr-JB-EQc" secondAttribute="bottom" id="NBE-u7-lvq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GYO-i4-pxy" secondAttribute="trailing" id="qZW-9e-Jvh"/>
+                            <constraint firstItem="GYO-i4-pxy" firstAttribute="top" secondItem="qPT-NM-0zm" secondAttribute="bottom" constant="2" id="rmH-tV-xdA"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iuT-hL-HsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2361.5" y="312.5"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="43Z-2X-nDk">
+            <objects>
+                <viewController storyboardIdentifier="Tutorial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qAf-52-pGh" customClass="TutorialViewController" customModule="JGFlipMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7hS-CJ-Ihx"/>
+                        <viewControllerLayoutGuide type="bottom" id="O37-cG-20q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DGj-2O-EhN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKV-XS-S8L">
+                                <rect key="frame" x="16" y="28" width="343" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJn-7M-tKf">
+                                <rect key="frame" x="23" y="17" width="30" height="30"/>
+                                <state key="normal" image="close-jg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="qAf-52-pGh" eventType="touchUpInside" id="M6R-dX-oEZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugO-4J-3Hi">
+                                <rect key="frame" x="16" y="63" width="343" height="577"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">1. Copy these class files to your Xcode Project 
+	* JGFlipMenuItem.swift
+	* JGFlipMenuController.swift
+	* JGTransitionExpandContract.swift
+2. Create a UIViewController in Interface Builder and assign JGFlipMenuController as class
+3. Embed in a Navigation Controller (i.e. from Interface Builder menu: Editor-&gt;Embed In-&gt;Navigation Controller)
+3. Drag UIViews *for each menu option*, and assign JGFlipMenuItem as class for each
+4. For each JGMenuItem use the Attributes Inspector to modify the default IBInspectable elements as desired: 
+	* Title
+	* Vertical &amp; horizontal text centering
+	* Front &amp; back panel runtime colors
+	* Font style and colors.
+5. Create or assign UIViewControllers to link your menu options to.
+6. **Important:** for each UIViewController it is *required* that you assign a Storyboard ID that *matches exactly* the JGMenuItem Title.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kKV-XS-S8L" firstAttribute="top" secondItem="7hS-CJ-Ihx" secondAttribute="bottom" constant="8" id="PF6-yj-aby"/>
+                            <constraint firstItem="kKV-XS-S8L" firstAttribute="leading" secondItem="DGj-2O-EhN" secondAttribute="leadingMargin" id="cD9-Re-nVZ"/>
+                            <constraint firstItem="kKV-XS-S8L" firstAttribute="trailing" secondItem="DGj-2O-EhN" secondAttribute="trailingMargin" id="eSx-Eb-dky"/>
+                            <constraint firstItem="ugO-4J-3Hi" firstAttribute="top" secondItem="kKV-XS-S8L" secondAttribute="bottom" constant="8" id="pzw-B6-q1L"/>
+                            <constraint firstItem="ugO-4J-3Hi" firstAttribute="leading" secondItem="DGj-2O-EhN" secondAttribute="leadingMargin" id="tJN-mt-IxD"/>
+                            <constraint firstItem="O37-cG-20q" firstAttribute="top" secondItem="ugO-4J-3Hi" secondAttribute="bottom" constant="27" id="y1o-sA-Lwy"/>
+                            <constraint firstItem="ugO-4J-3Hi" firstAttribute="trailing" secondItem="DGj-2O-EhN" secondAttribute="trailingMargin" id="yE4-mS-EEc"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Is-uy-Gb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2768.5" y="312.5"/>
+        </scene>
+        <!--Privacy Policy View Controller-->
+        <scene sceneID="Oy6-9d-s3B">
+            <objects>
+                <viewController storyboardIdentifier="Privacy Policy" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bjt-pi-qtp" customClass="PrivacyPolicyViewController" customModule="JGFlipMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7un-Bq-Uh9"/>
+                        <viewControllerLayoutGuide type="bottom" id="zgM-kD-wtW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CwG-DR-H08">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJz-6r-6bu">
+                                <rect key="frame" x="16" y="20" width="343" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBF-Da-NcT">
+                                <rect key="frame" x="16" y="17" width="30" height="30"/>
+                                <state key="normal" image="close-jg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="bjt-pi-qtp" eventType="touchUpInside" id="ZcC-Z8-n9T"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ua-cL-FdQ">
+                                <rect key="frame" x="16" y="57" width="343" height="587"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Information that is gathered from visitors
+
+In common with other websites, log files are stored on the web server saving details such as the visitor’s IP address, browser type, referring page and time of visit.
+
+Cookies may be used to remember visitor preferences when interacting with the website.
+
+Where registration is required, the visitor’s email and a username will be stored on the server.
+
+How the Information is used
+
+The information is used to enhance the vistor’s experience when using the website to display personalised content.
+
+E-mail addresses will not be sold, rented or leased to 3rd parties.
+
+E-mail may be sent to inform you of news of our services or offers by us.
+
+Visitor Options
+
+If you have subscribed to one of our services, you may unsubscribe by following the instructions which are included in e-mail that you receive.
+
+You may be able to block cookies via your browser settings but this may prevent you from access to certain features of the website.
+
+Cookies
+
+Cookies are small digital signature files that are stored by your web browser that allow your preferences to be recorded when visiting the website. Also they may be used to track your return visits to the website.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Ua-cL-FdQ" firstAttribute="leading" secondItem="CwG-DR-H08" secondAttribute="leadingMargin" id="2h5-nE-Xxp"/>
+                            <constraint firstItem="6Ua-cL-FdQ" firstAttribute="top" secondItem="7un-Bq-Uh9" secondAttribute="bottom" constant="37" id="SL4-rs-CCm"/>
+                            <constraint firstItem="zgM-kD-wtW" firstAttribute="top" secondItem="6Ua-cL-FdQ" secondAttribute="bottom" constant="23" id="UCs-5J-ehP"/>
+                            <constraint firstItem="IJz-6r-6bu" firstAttribute="leading" secondItem="CwG-DR-H08" secondAttribute="leadingMargin" id="gfH-F3-Dx8"/>
+                            <constraint firstItem="IJz-6r-6bu" firstAttribute="top" secondItem="7un-Bq-Uh9" secondAttribute="bottom" id="hSn-xu-br2"/>
+                            <constraint firstItem="IJz-6r-6bu" firstAttribute="trailing" secondItem="CwG-DR-H08" secondAttribute="trailingMargin" id="uTS-H9-8K3"/>
+                            <constraint firstItem="6Ua-cL-FdQ" firstAttribute="trailing" secondItem="CwG-DR-H08" secondAttribute="trailingMargin" id="yq6-Hx-h3R"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aI2-Mv-0wR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3180.5" y="312.5"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="Wsl-1J-cvn">
+            <objects>
+                <viewController storyboardIdentifier="About" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uzl-fC-9bf" customClass="AboutViewController" customModule="JGFlipMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t7p-yO-Ztj"/>
+                        <viewControllerLayoutGuide type="bottom" id="tKe-pQ-0QX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VG6-iZ-sYT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-qN-me2">
+                                <rect key="frame" x="48" y="194" width="280" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY7-Jm-Oon">
+                                        <rect key="frame" x="8" y="8" width="30" height="30"/>
+                                        <state key="normal" image="close-jg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeButtonPressed:" destination="uzl-fC-9bf" eventType="touchUpInside" id="BlU-uV-ueX"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC4-6x-d4z">
+                                        <rect key="frame" x="-31" y="8" width="343" height="27"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="copyright 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lta-RU-IrI">
+                                        <rect key="frame" x="94" y="257" width="84" height="15"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="created by: jeff greenberg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-Dp-t46">
+                                        <rect key="frame" x="75" y="238" width="132" height="14"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FlipMenuLogo" translatesAutoresizingMaskIntoConstraints="NO" id="y5f-yN-dWC">
+                                        <rect key="frame" x="62" y="79" width="120" height="122"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="y5f-yN-dWC" secondAttribute="centerY" id="5I7-vf-Wqt"/>
+                                    <constraint firstAttribute="centerX" secondItem="Lta-RU-IrI" secondAttribute="centerX" constant="4.5" id="Dxd-ZZ-Xch"/>
+                                    <constraint firstItem="Lta-RU-IrI" firstAttribute="top" secondItem="Ofz-Dp-t46" secondAttribute="bottom" constant="5" id="IZa-EQ-Fg9"/>
+                                    <constraint firstItem="VY7-Jm-Oon" firstAttribute="top" secondItem="f3V-qN-me2" secondAttribute="top" constant="8" id="JjH-ze-tGs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lta-RU-IrI" secondAttribute="bottom" constant="8" id="Jz4-6f-bt4"/>
+                                    <constraint firstAttribute="centerX" secondItem="Ofz-Dp-t46" secondAttribute="centerX" constant="-0.5" id="OdC-JN-6ZR"/>
+                                    <constraint firstItem="gC4-6x-d4z" firstAttribute="centerX" secondItem="f3V-qN-me2" secondAttribute="centerX" id="RD8-mm-Hth"/>
+                                    <constraint firstAttribute="width" constant="280" id="Sqh-70-W17"/>
+                                    <constraint firstItem="VY7-Jm-Oon" firstAttribute="leading" secondItem="f3V-qN-me2" secondAttribute="leading" constant="8" id="bpg-9Z-Gbf"/>
+                                    <constraint firstItem="gC4-6x-d4z" firstAttribute="top" secondItem="f3V-qN-me2" secondAttribute="top" constant="8" id="lti-ns-LAC"/>
+                                    <constraint firstAttribute="height" constant="280" id="qL3-Al-hTZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="y5f-yN-dWC" secondAttribute="centerX" constant="18" id="uGa-TU-V6b"/>
+                                    <constraint firstItem="gC4-6x-d4z" firstAttribute="leading" secondItem="f3V-qN-me2" secondAttribute="leading" constant="-31" id="x1Y-O1-CPh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="f3V-qN-me2" secondAttribute="centerX" id="1X2-ae-aYM"/>
+                            <constraint firstAttribute="centerY" secondItem="f3V-qN-me2" secondAttribute="centerY" id="qjW-YS-cOC"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1BE-3u-s3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947.5" y="312.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3aK-yY-mPt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="TV9-QQ-Ypu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o64-Ud-OpE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Ie9-t7-NSz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3h-d7-CLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="312"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FlipMenuLogo" width="120" height="122"/>
+        <image name="close-jg" width="30" height="30"/>
+    </resources>
 </document>

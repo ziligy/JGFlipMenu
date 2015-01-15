@@ -15,17 +15,17 @@ protocol JGFlipMenuItemDelegate{
 
 @IBDesignable class JGFlipMenuItem: UIView, UITextViewDelegate {
 
-    let frontSideView = UIView()
-    let backSideView = UIView()
+    internal var delegate: JGFlipMenuItemDelegate?
     
-    var frontSideTitle: UITextView!
-    var backSideTitle: UITextView!
+    internal var frontSideTitle: UITextView!
+    internal var backSideTitle: UITextView!
     
-    var delegate: JGFlipMenuItemDelegate?
+    private let frontSideView = UIView()
+    internal var backSideView = UIView()
     
-    var menuItemFrame = CGRect(x: 0, y: 0, width: 100, height: 100)
+    private var menuItemFrame = CGRect(x: 0, y: 0, width: 100, height: 100)
     
-    var frontFacing = true
+    private var frontFacing = true
     
     @IBInspectable var title: String = "Title" {
         didSet {
@@ -34,7 +34,7 @@ protocol JGFlipMenuItemDelegate{
         }
     }
     
-    @IBInspectable var backTitle: String = "back side" {
+    @IBInspectable var backTitle: String = "" {
         didSet {
             backSideTitle.text = backTitle
             backSideTitle = setTextConditionals(backSideTitle)
@@ -102,7 +102,47 @@ protocol JGFlipMenuItemDelegate{
         setup()
     }
     
-    func setup() {
+    internal func flipToBackSide() {
+        
+        if !self.frontFacing {return}
+        
+        let transitionOptions = UIViewAnimationOptions.TransitionFlipFromRight
+        
+        UIView.transitionFromView(frontSideView, toView: backSideView, duration: 0.5, options: transitionOptions,
+            
+            completion: { finished in
+                self.frontFacing = false
+                self.triggerFrontSideDelegate()
+        })
+        
+    }
+    
+    internal func flipToFrontSide() {
+        
+        if self.frontFacing {return}
+        
+        let transitionOptions = UIViewAnimationOptions.TransitionFlipFromLeft | .OverrideInheritedOptions | .AllowAnimatedContent
+        
+        UIView.transitionFromView(backSideView, toView: frontSideView, duration: 0.5, options: transitionOptions,
+            
+            completion: { finished in
+                self.frontFacing = true
+                self.triggerBackSideDelegate()
+        })
+    }
+    
+    // user touched! & dont allow textview editing
+    internal func textViewShouldBeginEditing(textView: UITextView!)->Bool {
+        if frontFacing {
+            flipToBackSide()
+        } else {
+            flipToFrontSide()
+        }
+        
+        return false
+    }
+    
+    private func setup() {
         
         menuItemFrame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
         
@@ -121,7 +161,7 @@ protocol JGFlipMenuItemDelegate{
         self.addSubview(frontSideView)
     }
     
-    func makeText(text: String)-> UITextView {
+    private func makeText(text: String)-> UITextView {
         var textView = UITextView(frame: menuItemFrame)
         
         textView.delegate = self
@@ -133,7 +173,7 @@ protocol JGFlipMenuItemDelegate{
         return textView
     }
     
-    func setTextConditionals(textView: UITextView)-> UITextView {
+    private func setTextConditionals(textView: UITextView)-> UITextView {
         
         textView.font = boldFont ? UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline) : UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
         textView.textAlignment = centerHorizontal ? .Center : .Left
@@ -142,7 +182,7 @@ protocol JGFlipMenuItemDelegate{
         return textView
     }
     
-    func resizeTextViewFrameToCenter(textView: UITextView, fitToFrame: CGRect)-> CGRect {
+    private func resizeTextViewFrameToCenter(textView: UITextView, fitToFrame: CGRect)-> CGRect {
         
         let textViewCGSize = textView.sizeThatFits(CGSizeMake(fitToFrame.width, fitToFrame.height))
         let topInset: CGFloat = (fitToFrame.height - textViewCGSize.height)/2
@@ -153,47 +193,11 @@ protocol JGFlipMenuItemDelegate{
         return resizedTextFrame
     }
     
-    func flipToBackSide() {
-    
-        let transitionOptions = UIViewAnimationOptions.TransitionFlipFromRight
-        
-        UIView.transitionFromView(frontSideView, toView: backSideView, duration: 0.5, options: transitionOptions,
-            
-            completion: { finished in
-                self.triggerFrontSideDelegate()
-        })
-    }
-    
-    func flipToFrontSide() {
-        
-        let transitionOptions = UIViewAnimationOptions.TransitionFlipFromLeft
-        
-        UIView.transitionFromView(backSideView, toView: frontSideView, duration: 0.5, options: transitionOptions,
-            
-            completion: { finished in
-                self.triggerBackSideDelegate()
-        })
-    }
-    
-    // user touched! & dont allow textview editing
-    func textViewShouldBeginEditing(textView: UITextView!)->Bool {
-        
-        if frontFacing {
-            frontFacing = false
-            flipToBackSide()
-        } else {
-            frontFacing = true
-            flipToFrontSide()
-        }
-        
-        return false
-    }
-    
-    func triggerFrontSideDelegate() {
+    private func triggerFrontSideDelegate() {
         self.delegate?.frontSideSelected(self.tag)
     }
     
-    func triggerBackSideDelegate() {
+    internal func triggerBackSideDelegate() {
         self.delegate?.backSideSelected(self.tag)
     }
     
