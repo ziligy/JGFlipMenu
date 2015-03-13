@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TV9-QQ-Ypu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TV9-QQ-Ypu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -255,7 +255,7 @@ THE SOFTWARE.
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugO-4J-3Hi">
                                 <rect key="frame" x="16" y="63" width="343" height="577"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">1. Copy these class files to your Xcode Project 
+                                <string key="text">1. Copy these class files to your Xcode Project 
 	* JGFlipMenuItem.swift
 	* JGFlipMenuController.swift
 	* JGTransitionExpandContract.swift
@@ -268,7 +268,7 @@ THE SOFTWARE.
 	* Front &amp; back panel runtime colors
 	* Font style and colors.
 5. Create or assign UIViewControllers to link your menu options to.
-6. **Important:** for each UIViewController it is *required* that you assign a Storyboard ID that *matches exactly* the JGMenuItem Title.</mutableString>
+6. **Important:** for each UIViewController it is *required* that you assign a Storyboard ID that *matches exactly* the JGMenuItem Title.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -424,12 +424,12 @@ Cookies are small digital signature files that are stored by your web browser th
                                     <constraint firstAttribute="centerY" secondItem="y5f-yN-dWC" secondAttribute="centerY" id="5I7-vf-Wqt"/>
                                     <constraint firstAttribute="centerX" secondItem="Lta-RU-IrI" secondAttribute="centerX" constant="4.5" id="Dxd-ZZ-Xch"/>
                                     <constraint firstItem="Lta-RU-IrI" firstAttribute="top" secondItem="Ofz-Dp-t46" secondAttribute="bottom" constant="5" id="IZa-EQ-Fg9"/>
-                                    <constraint firstItem="VY7-Jm-Oon" firstAttribute="top" secondItem="f3V-qN-me2" secondAttribute="top" constant="8" id="JjH-ze-tGs"/>
                                     <constraint firstAttribute="bottom" secondItem="Lta-RU-IrI" secondAttribute="bottom" constant="8" id="Jz4-6f-bt4"/>
                                     <constraint firstAttribute="centerX" secondItem="Ofz-Dp-t46" secondAttribute="centerX" constant="-0.5" id="OdC-JN-6ZR"/>
                                     <constraint firstItem="gC4-6x-d4z" firstAttribute="centerX" secondItem="f3V-qN-me2" secondAttribute="centerX" id="RD8-mm-Hth"/>
                                     <constraint firstAttribute="width" constant="280" id="Sqh-70-W17"/>
-                                    <constraint firstItem="VY7-Jm-Oon" firstAttribute="leading" secondItem="f3V-qN-me2" secondAttribute="leading" constant="8" id="bpg-9Z-Gbf"/>
+                                    <constraint firstItem="VY7-Jm-Oon" firstAttribute="leading" secondItem="f3V-qN-me2" secondAttribute="leadingMargin" id="U0x-f5-BwM"/>
+                                    <constraint firstItem="VY7-Jm-Oon" firstAttribute="top" secondItem="gC4-6x-d4z" secondAttribute="top" id="f7E-y2-A0n"/>
                                     <constraint firstItem="gC4-6x-d4z" firstAttribute="top" secondItem="f3V-qN-me2" secondAttribute="top" constant="8" id="lti-ns-LAC"/>
                                     <constraint firstAttribute="height" constant="280" id="qL3-Al-hTZ"/>
                                     <constraint firstAttribute="centerX" secondItem="y5f-yN-dWC" secondAttribute="centerX" constant="18" id="uGa-TU-V6b"/>
