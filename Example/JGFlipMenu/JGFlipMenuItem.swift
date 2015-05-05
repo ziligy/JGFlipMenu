@@ -13,11 +13,13 @@ protocol JGFlipMenuItemDelegate{
     func backSideSelected(indexTag: Int)
 }
 
-@IBDesignable class JGFlipMenuItem: UIView, UITextViewDelegate {
+@IBDesignable class JGFlipMenuItem: UIView,  UITextViewDelegate {
 
     internal var delegate: JGFlipMenuItemDelegate?
     
     internal var frontSideTitle: UITextView!
+    internal var frontSideImageView: UIImageView!
+    internal var backSideImageView: UIImageView!
     internal var backSideTitle: UITextView!
     
     private let frontSideView = UIView()
@@ -26,6 +28,18 @@ protocol JGFlipMenuItemDelegate{
     private var menuItemFrame = CGRect(x: 0, y: 0, width: 100, height: 100)
     
     private var frontFacing = true
+    
+    @IBInspectable  var frontImage: UIImage=UIImage() {
+        didSet  {
+            self.frontSideImageView.image = self.frontImage
+               }
+    }
+    
+    @IBInspectable  var backImage: UIImage=UIImage() {
+        didSet  {
+            self.backSideImageView.image = self.backImage
+        }
+    }
     
     @IBInspectable var title: String = "Title" {
         didSet {
@@ -58,7 +72,9 @@ protocol JGFlipMenuItemDelegate{
     @IBInspectable var panelFrontColor: UIColor = UIColor.whiteColor() {
         didSet {
             frontSideView.backgroundColor = panelFrontColor
-        }
+            
+            
+                    }
     }
     
     @IBInspectable var panelBackColor: UIColor = UIColor.whiteColor() {
@@ -89,7 +105,11 @@ protocol JGFlipMenuItemDelegate{
     override func prepareForInterfaceBuilder() {
         menuItemFrame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
         frontSideTitle.frame = menuItemFrame
+        backSideImageView.frame = menuItemFrame
+        frontSideImageView.frame = menuItemFrame
+        
         title = frontSideTitle.text
+        
     }
     
     override init(frame: CGRect) {
@@ -149,14 +169,19 @@ protocol JGFlipMenuItemDelegate{
         backSideView.frame = menuItemFrame
         backSideView.backgroundColor = UIColor.whiteColor()
         backSideTitle = makeText(backTitle)
+        backSideImageView = makeImage(backImage)
+        
         
         frontSideView.frame = menuItemFrame
         frontSideView.backgroundColor = UIColor.whiteColor()
         frontSideTitle = makeText(title)
+        frontSideImageView = makeImage(frontImage)
         
+        self.backSideView.addSubview(backSideImageView)
         self.backSideView.addSubview(backSideTitle)
         self.addSubview(backSideView)
             
+        self.frontSideView.addSubview(frontSideImageView)
         self.frontSideView.addSubview(frontSideTitle)
         self.addSubview(frontSideView)
     }
@@ -172,6 +197,14 @@ protocol JGFlipMenuItemDelegate{
     
         return textView
     }
+    private func makeImage(image: UIImage)-> UIImageView {
+        var imageView = UIImageView(frame: menuItemFrame)
+        
+        imageView.image = image
+        
+        return imageView
+    }
+
     
     private func setTextConditionals(textView: UITextView)-> UITextView {
         

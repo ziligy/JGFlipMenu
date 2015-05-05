@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0AFC661AF8EF5000E8F448 /* NatGeo01L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AFC621AF8EF5000E8F448 /* NatGeo01L.jpg */; };
+		7A0AFC671AF8EF5000E8F448 /* NatGeo03L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AFC631AF8EF5000E8F448 /* NatGeo03L.jpg */; };
+		7A0AFC681AF8EF5000E8F448 /* NatGeo06L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AFC641AF8EF5000E8F448 /* NatGeo06L.jpg */; };
+		7A0AFC691AF8EF5000E8F448 /* NatGeo07L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AFC651AF8EF5000E8F448 /* NatGeo07L.jpg */; };
 		CE4953ED1A4C589900106ED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4953EC1A4C589900106ED7 /* AppDelegate.swift */; };
 		CE4953F21A4C589900106ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4953F01A4C589900106ED7 /* Main.storyboard */; };
 		CE4953F41A4C589900106ED7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4953F31A4C589900106ED7 /* Images.xcassets */; };
@@ -32,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A0AFC621AF8EF5000E8F448 /* NatGeo01L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo01L.jpg; sourceTree = "<group>"; };
+		7A0AFC631AF8EF5000E8F448 /* NatGeo03L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo03L.jpg; sourceTree = "<group>"; };
+		7A0AFC641AF8EF5000E8F448 /* NatGeo06L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo06L.jpg; sourceTree = "<group>"; };
+		7A0AFC651AF8EF5000E8F448 /* NatGeo07L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo07L.jpg; sourceTree = "<group>"; };
 		CE4953E71A4C589900106ED7 /* JGFlipMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JGFlipMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4953EB1A4C589900106ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4953EC1A4C589900106ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +113,10 @@
 		CE4953EA1A4C589900106ED7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7A0AFC621AF8EF5000E8F448 /* NatGeo01L.jpg */,
+				7A0AFC631AF8EF5000E8F448 /* NatGeo03L.jpg */,
+				7A0AFC641AF8EF5000E8F448 /* NatGeo06L.jpg */,
+				7A0AFC651AF8EF5000E8F448 /* NatGeo07L.jpg */,
 				CE4953EB1A4C589900106ED7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -221,6 +233,10 @@
 				CE4953F21A4C589900106ED7 /* Main.storyboard in Resources */,
 				CE4953F71A4C589900106ED7 /* LaunchScreen.xib in Resources */,
 				CE4953F41A4C589900106ED7 /* Images.xcassets in Resources */,
+				7A0AFC661AF8EF5000E8F448 /* NatGeo01L.jpg in Resources */,
+				7A0AFC681AF8EF5000E8F448 /* NatGeo06L.jpg in Resources */,
+				7A0AFC671AF8EF5000E8F448 /* NatGeo03L.jpg in Resources */,
+				7A0AFC691AF8EF5000E8F448 /* NatGeo07L.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JGFlipMenu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -380,7 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JGFlipMenu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

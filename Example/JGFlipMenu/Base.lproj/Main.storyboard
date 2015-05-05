@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TV9-QQ-Ypu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TV9-QQ-Ypu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNp-5g-vmW">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNp-5g-vmW" colorLabel="IBBuiltInLabel-Blue">
                                 <rect key="frame" x="58" y="204" width="260" height="260"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYL-7L-d1G" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
@@ -40,40 +40,20 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="frontImage" value="NatGeo03L.jpg"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="backImage" value="NatGeo06L.jpg"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um0-fy-MIr" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um0-fy-MIr" customClass="JGFlipMenuItem" customModule="JGFlipMenu">
                                         <rect key="frame" x="20" y="20" width="100" height="100"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="About"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="panelFrontColor">
-                                                <color key="value" red="0.95294117647058818" green="0.83529411764705885" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="fontBackColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjB-LK-fhv" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
-                                        <rect key="frame" x="140" y="140" width="100" height="100"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Privacy Policy"/>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="panelFrontColor">
                                                 <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -84,6 +64,8 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="frontImage" value="NatGeo01L.jpg"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="backImage" value="NatGeo03L.jpg"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHc-Xf-d8i" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
@@ -107,10 +89,36 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="frontImage" value="NatGeo06L.jpg"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="backImage" value="NatGeo01L.jpg"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjB-LK-fhv" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
+                                        <rect key="frame" x="140" y="140" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Privacy Policy"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="panelFrontColor">
+                                                <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontBackColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="frontImage" value="NatGeo07L.jpg"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="backImage" value="NatGeo06L.jpg"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.078431372549019607" green="0.11764705882352941" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.40997840258904394" green="0.57024099344911106" blue="0.85175356657608692" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="rYL-7L-d1G" firstAttribute="leading" secondItem="um0-fy-MIr" secondAttribute="trailing" constant="20" id="1xW-dh-pCF"/>
                                     <constraint firstItem="OjB-LK-fhv" firstAttribute="top" secondItem="rYL-7L-d1G" secondAttribute="bottom" constant="20" id="2VG-rr-Nhy"/>
@@ -162,7 +170,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Use" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPT-NM-0zm">
                                 <rect key="frame" x="16" y="20" width="343" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYO-i4-pxy">
@@ -240,7 +248,7 @@ THE SOFTWARE.
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKV-XS-S8L">
                                 <rect key="frame" x="16" y="28" width="343" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJn-7M-tKf">
@@ -262,7 +270,8 @@ THE SOFTWARE.
 2. Create a UIViewController in Interface Builder and assign JGFlipMenuController as class
 3. Embed in a Navigation Controller (i.e. from Interface Builder menu: Editor-&gt;Embed In-&gt;Navigation Controller)
 3. Drag UIViews *for each menu option*, and assign JGFlipMenuItem as class for each
-4. For each JGMenuItem use the Attributes Inspector to modify the default IBInspectable elements as desired: 
+4. For each JGMenuItem use the Attributes Inspector to modify the default IBInspectable elements as desired:
+    * Front &amp; back images
 	* Title
 	* Vertical &amp; horizontal text centering
 	* Front &amp; back panel runtime colors
@@ -305,7 +314,7 @@ THE SOFTWARE.
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJz-6r-6bu">
                                 <rect key="frame" x="16" y="20" width="343" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBF-Da-NcT">
@@ -385,8 +394,8 @@ Cookies are small digital signature files that are stored by your web browser th
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-qN-me2">
-                                <rect key="frame" x="48" y="194" width="280" height="280"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-qN-me2">
+                                <rect key="frame" x="24" y="127" width="328" height="392"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY7-Jm-Oon">
                                         <rect key="frame" x="8" y="8" width="30" height="30"/>
@@ -397,26 +406,26 @@ Cookies are small digital signature files that are stored by your web browser th
                                             <action selector="closeButtonPressed:" destination="uzl-fC-9bf" eventType="touchUpInside" id="BlU-uV-ueX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC4-6x-d4z">
-                                        <rect key="frame" x="-31" y="8" width="343" height="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC4-6x-d4z">
+                                        <rect key="frame" x="-31" y="8" width="391" height="27"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="copyright 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lta-RU-IrI">
-                                        <rect key="frame" x="94" y="257" width="84" height="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="copyright 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lta-RU-IrI">
+                                        <rect key="frame" x="107" y="325" width="84" height="15"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="created by: jeff greenberg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-Dp-t46">
-                                        <rect key="frame" x="75" y="238" width="132" height="14"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="created by: jeff greenberg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-Dp-t46">
+                                        <rect key="frame" x="99" y="350" width="132" height="14"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FlipMenuLogo" translatesAutoresizingMaskIntoConstraints="NO" id="y5f-yN-dWC">
-                                        <rect key="frame" x="62" y="79" width="120" height="122"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="FlipMenuLogo" translatesAutoresizingMaskIntoConstraints="NO" id="y5f-yN-dWC">
+                                        <rect key="frame" x="75" y="86" width="120" height="122"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -471,6 +480,10 @@ Cookies are small digital signature files that are stored by your web browser th
     </scenes>
     <resources>
         <image name="FlipMenuLogo" width="120" height="122"/>
+        <image name="NatGeo01L.jpg" width="113" height="71"/>
+        <image name="NatGeo03L.jpg" width="113" height="71"/>
+        <image name="NatGeo06L.jpg" width="113" height="71"/>
+        <image name="NatGeo07L.jpg" width="378" height="236"/>
         <image name="close-jg" width="30" height="30"/>
     </resources>
 </document>

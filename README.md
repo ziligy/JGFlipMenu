@@ -26,7 +26,8 @@ Flipping menu system written in Swift. Uses @IBDesignable for quick and easy imp
 2. Create a UIViewController in Interface Builder and assign JGFlipMenuController as class
 3. Embed in a Navigation Controller (i.e. from Interface Builder menu: Editor->Embed In->Navigation Controller)
 3. Drag UIViews *for each menu option*, and assign JGFlipMenuItem as class for each
-4. For each JGMenuItem use the Attributes Inspector to modify the default IBInspectable elements as desired: 
+4. For each JGMenuItem use the Attributes Inspector to modify the default IBInspectable elements as desired:
+    * Front & back images
 	* Title
 	* Vertical & horizontal text centering
 	* Front & back panel runtime colors
