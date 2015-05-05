@@ -82,7 +82,7 @@ class JGFlipMenuController: UIViewController, UINavigationControllerDelegate, JG
     
     override func viewDidAppear(animated: Bool) {
         // ignore if currentIndex is nil, as when view first appears
-        if let index = currentIndex? {
+        if let index = currentIndex {
             // menu item is done with display so flip to the front side
             self.menuItems[index].flipToFrontSide()
         }
