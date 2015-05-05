@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AAC34B91AEF841D00E6BC16 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC34B81AEF841D00E6BC16 /* TestViewController.swift */; };
-		7AAC34BC1AEF8C2900E6BC16 /* nogi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC34BA1AEF8C2900E6BC16 /* nogi.jpg */; };
-		7AAC34BD1AEF8C2900E6BC16 /* spina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC34BB1AEF8C2900E6BC16 /* spina.jpg */; };
-		7AD258191AEE44F70055615C /* Grud.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AD258151AEE44F70055615C /* Grud.jpg */; };
-		7AD2581A1AEE44F70055615C /* Hand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AD258161AEE44F70055615C /* Hand.jpg */; };
-		7AD2581B1AEE44F70055615C /* Jivot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AD258171AEE44F70055615C /* Jivot.jpg */; };
-		7AD2581C1AEE44F70055615C /* Plechi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AD258181AEE44F70055615C /* Plechi.jpg */; };
+		7A0AFC661AF8EF5000E8F448 /* NatGeo01L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AFC621AF8EF5000E8F448 /* NatGeo01L.jpg */; };
+		7A0AFC671AF8EF5000E8F448 /* NatGeo03L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AFC631AF8EF5000E8F448 /* NatGeo03L.jpg */; };
+		7A0AFC681AF8EF5000E8F448 /* NatGeo06L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AFC641AF8EF5000E8F448 /* NatGeo06L.jpg */; };
+		7A0AFC691AF8EF5000E8F448 /* NatGeo07L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AFC651AF8EF5000E8F448 /* NatGeo07L.jpg */; };
 		CE4953ED1A4C589900106ED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4953EC1A4C589900106ED7 /* AppDelegate.swift */; };
 		CE4953F21A4C589900106ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4953F01A4C589900106ED7 /* Main.storyboard */; };
 		CE4953F41A4C589900106ED7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4953F31A4C589900106ED7 /* Images.xcassets */; };
@@ -39,13 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7AAC34B81AEF841D00E6BC16 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		7AAC34BA1AEF8C2900E6BC16 /* nogi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nogi.jpg; sourceTree = "<group>"; };
-		7AAC34BB1AEF8C2900E6BC16 /* spina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spina.jpg; sourceTree = "<group>"; };
-		7AD258151AEE44F70055615C /* Grud.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Grud.jpg; sourceTree = "<group>"; };
-		7AD258161AEE44F70055615C /* Hand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hand.jpg; sourceTree = "<group>"; };
-		7AD258171AEE44F70055615C /* Jivot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jivot.jpg; sourceTree = "<group>"; };
-		7AD258181AEE44F70055615C /* Plechi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Plechi.jpg; sourceTree = "<group>"; };
+		7A0AFC621AF8EF5000E8F448 /* NatGeo01L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo01L.jpg; sourceTree = "<group>"; };
+		7A0AFC631AF8EF5000E8F448 /* NatGeo03L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo03L.jpg; sourceTree = "<group>"; };
+		7A0AFC641AF8EF5000E8F448 /* NatGeo06L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo06L.jpg; sourceTree = "<group>"; };
+		7A0AFC651AF8EF5000E8F448 /* NatGeo07L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo07L.jpg; sourceTree = "<group>"; };
 		CE4953E71A4C589900106ED7 /* JGFlipMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JGFlipMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4953EB1A4C589900106ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4953EC1A4C589900106ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,12 +113,10 @@
 		CE4953EA1A4C589900106ED7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7AAC34BA1AEF8C2900E6BC16 /* nogi.jpg */,
-				7AAC34BB1AEF8C2900E6BC16 /* spina.jpg */,
-				7AD258151AEE44F70055615C /* Grud.jpg */,
-				7AD258161AEE44F70055615C /* Hand.jpg */,
-				7AD258171AEE44F70055615C /* Jivot.jpg */,
-				7AD258181AEE44F70055615C /* Plechi.jpg */,
+				7A0AFC621AF8EF5000E8F448 /* NatGeo01L.jpg */,
+				7A0AFC631AF8EF5000E8F448 /* NatGeo03L.jpg */,
+				7A0AFC641AF8EF5000E8F448 /* NatGeo06L.jpg */,
+				7A0AFC651AF8EF5000E8F448 /* NatGeo07L.jpg */,
 				CE4953EB1A4C589900106ED7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -154,7 +146,6 @@
 				CE7E8D651A5047B6006BD80D /* PrivacyPolicyViewController.swift */,
 				CEA5EB491A4F3C3300F28A69 /* TermsOfUseViewController.swift */,
 				CE7E8D631A504791006BD80D /* AboutViewController.swift */,
-				7AAC34B81AEF841D00E6BC16 /* TestViewController.swift */,
 			);
 			name = "Demo View Controllers";
 			sourceTree = "<group>";
@@ -240,14 +231,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4953F21A4C589900106ED7 /* Main.storyboard in Resources */,
-				7AAC34BD1AEF8C2900E6BC16 /* spina.jpg in Resources */,
-				7AD258191AEE44F70055615C /* Grud.jpg in Resources */,
-				7AD2581C1AEE44F70055615C /* Plechi.jpg in Resources */,
-				7AD2581A1AEE44F70055615C /* Hand.jpg in Resources */,
-				7AAC34BC1AEF8C2900E6BC16 /* nogi.jpg in Resources */,
 				CE4953F71A4C589900106ED7 /* LaunchScreen.xib in Resources */,
-				7AD2581B1AEE44F70055615C /* Jivot.jpg in Resources */,
 				CE4953F41A4C589900106ED7 /* Images.xcassets in Resources */,
+				7A0AFC661AF8EF5000E8F448 /* NatGeo01L.jpg in Resources */,
+				7A0AFC681AF8EF5000E8F448 /* NatGeo06L.jpg in Resources */,
+				7A0AFC671AF8EF5000E8F448 /* NatGeo03L.jpg in Resources */,
+				7A0AFC691AF8EF5000E8F448 /* NatGeo07L.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +261,6 @@
 				CEA5EB4A1A4F3C3300F28A69 /* TermsOfUseViewController.swift in Sources */,
 				CE7E8D661A5047B6006BD80D /* PrivacyPolicyViewController.swift in Sources */,
 				CE7E8D641A504791006BD80D /* AboutViewController.swift in Sources */,
-				7AAC34B91AEF841D00E6BC16 /* TestViewController.swift in Sources */,
 				CE49540F1A4C58B800106ED7 /* JGFlipMenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
