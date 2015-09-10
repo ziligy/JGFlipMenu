@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TV9-QQ-Ypu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TV9-QQ-Ypu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -22,17 +23,17 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYL-7L-d1G" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
                                         <rect key="frame" x="140" y="20" width="100" height="100"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Terms of Use"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="panelFrontColor">
                                                 <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fontBackColor">
                                                 <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,8 +41,8 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="frontImage" value="NatGeo03L.jpg"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="backImage" value="NatGeo06L.jpg"/>
+                                            <userDefinedRuntimeAttribute type="nil" keyPath="frontImage"/>
+                                            <userDefinedRuntimeAttribute type="nil" keyPath="backImage"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um0-fy-MIr" customClass="JGFlipMenuItem" customModule="JGFlipMenu">
@@ -78,19 +79,17 @@
                                                 <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="panelBackColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fontFrontColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fontBackColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="centerHorizontal" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertical" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="frontImage" value="NatGeo06L.jpg"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="backImage" value="NatGeo01L.jpg"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjB-LK-fhv" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
@@ -118,7 +117,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.40997840258904394" green="0.57024099344911106" blue="0.85175356657608692" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="rYL-7L-d1G" firstAttribute="leading" secondItem="um0-fy-MIr" secondAttribute="trailing" constant="20" id="1xW-dh-pCF"/>
                                     <constraint firstItem="OjB-LK-fhv" firstAttribute="top" secondItem="rYL-7L-d1G" secondAttribute="bottom" constant="20" id="2VG-rr-Nhy"/>
@@ -394,7 +393,7 @@ Cookies are small digital signature files that are stored by your web browser th
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-qN-me2">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-qN-me2">
                                 <rect key="frame" x="24" y="127" width="328" height="392"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY7-Jm-Oon">
@@ -406,51 +405,49 @@ Cookies are small digital signature files that are stored by your web browser th
                                             <action selector="closeButtonPressed:" destination="uzl-fC-9bf" eventType="touchUpInside" id="BlU-uV-ueX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC4-6x-d4z">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC4-6x-d4z">
                                         <rect key="frame" x="-31" y="8" width="391" height="27"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="copyright 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lta-RU-IrI">
-                                        <rect key="frame" x="107" y="325" width="84" height="15"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="created by: jeff greenberg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-Dp-t46">
-                                        <rect key="frame" x="99" y="350" width="132" height="14"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FlipMenuLogo" translatesAutoresizingMaskIntoConstraints="NO" id="y5f-yN-dWC">
+                                        <rect key="frame" x="75" y="86" width="120" height="122"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="created by: jeff greenberg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-Dp-t46">
+                                        <rect key="frame" x="96" y="350" width="137" height="14"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="FlipMenuLogo" translatesAutoresizingMaskIntoConstraints="NO" id="y5f-yN-dWC">
-                                        <rect key="frame" x="75" y="86" width="120" height="122"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerY" secondItem="y5f-yN-dWC" secondAttribute="centerY" id="5I7-vf-Wqt"/>
-                                    <constraint firstAttribute="centerX" secondItem="Lta-RU-IrI" secondAttribute="centerX" constant="4.5" id="Dxd-ZZ-Xch"/>
-                                    <constraint firstItem="Lta-RU-IrI" firstAttribute="top" secondItem="Ofz-Dp-t46" secondAttribute="bottom" constant="5" id="IZa-EQ-Fg9"/>
-                                    <constraint firstAttribute="bottom" secondItem="Lta-RU-IrI" secondAttribute="bottom" constant="8" id="Jz4-6f-bt4"/>
+                                    <constraint firstAttribute="centerY" secondItem="y5f-yN-dWC" secondAttribute="centerY" constant="49" id="5I7-vf-Wqt"/>
                                     <constraint firstAttribute="centerX" secondItem="Ofz-Dp-t46" secondAttribute="centerX" constant="-0.5" id="OdC-JN-6ZR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ofz-Dp-t46" secondAttribute="bottom" constant="28" id="QUF-wN-CYr"/>
                                     <constraint firstItem="gC4-6x-d4z" firstAttribute="centerX" secondItem="f3V-qN-me2" secondAttribute="centerX" id="RD8-mm-Hth"/>
-                                    <constraint firstAttribute="width" constant="280" id="Sqh-70-W17"/>
+                                    <constraint firstAttribute="width" constant="328" id="Sqh-70-W17"/>
                                     <constraint firstItem="VY7-Jm-Oon" firstAttribute="leading" secondItem="f3V-qN-me2" secondAttribute="leadingMargin" id="U0x-f5-BwM"/>
                                     <constraint firstItem="VY7-Jm-Oon" firstAttribute="top" secondItem="gC4-6x-d4z" secondAttribute="top" id="f7E-y2-A0n"/>
                                     <constraint firstItem="gC4-6x-d4z" firstAttribute="top" secondItem="f3V-qN-me2" secondAttribute="top" constant="8" id="lti-ns-LAC"/>
-                                    <constraint firstAttribute="height" constant="280" id="qL3-Al-hTZ"/>
-                                    <constraint firstAttribute="centerX" secondItem="y5f-yN-dWC" secondAttribute="centerX" constant="18" id="uGa-TU-V6b"/>
+                                    <constraint firstAttribute="height" constant="392" id="qL3-Al-hTZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="y5f-yN-dWC" secondAttribute="centerX" constant="29" id="uGa-TU-V6b"/>
                                     <constraint firstItem="gC4-6x-d4z" firstAttribute="leading" secondItem="f3V-qN-me2" secondAttribute="leading" constant="-31" id="x1Y-O1-CPh"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="copyright 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lta-RU-IrI">
+                                <rect key="frame" x="144" y="445" width="86" height="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="f3V-qN-me2" secondAttribute="centerX" id="1X2-ae-aYM"/>
-                            <constraint firstAttribute="centerY" secondItem="f3V-qN-me2" secondAttribute="centerY" id="qjW-YS-cOC"/>
+                            <constraint firstAttribute="centerY" secondItem="f3V-qN-me2" secondAttribute="centerY" constant="10.5" id="qjW-YS-cOC"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

@@ -72,9 +72,8 @@ protocol JGFlipMenuItemDelegate{
     @IBInspectable var panelFrontColor: UIColor = UIColor.whiteColor() {
         didSet {
             frontSideView.backgroundColor = panelFrontColor
-            
-            
-                    }
+            self.backgroundColor = panelFrontColor
+        }
     }
     
     @IBInspectable var panelBackColor: UIColor = UIColor.whiteColor() {
@@ -117,7 +116,7 @@ protocol JGFlipMenuItemDelegate{
         setup()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -141,7 +140,7 @@ protocol JGFlipMenuItemDelegate{
         
         if self.frontFacing {return}
         
-        let transitionOptions = UIViewAnimationOptions.TransitionFlipFromLeft | .OverrideInheritedOptions | .AllowAnimatedContent
+        let transitionOptions: UIViewAnimationOptions = [UIViewAnimationOptions.TransitionFlipFromLeft, .OverrideInheritedOptions, .AllowAnimatedContent]
         
         UIView.transitionFromView(backSideView, toView: frontSideView, duration: 0.5, options: transitionOptions,
             
@@ -152,7 +151,7 @@ protocol JGFlipMenuItemDelegate{
     }
     
     // user touched! & dont allow textview editing
-    internal func textViewShouldBeginEditing(textView: UITextView!)->Bool {
+    internal func textViewShouldBeginEditing(textView: UITextView)->Bool {
         if frontFacing {
             flipToBackSide()
         } else {
@@ -198,7 +197,7 @@ protocol JGFlipMenuItemDelegate{
         return textView
     }
     private func makeImage(image: UIImage)-> UIImageView {
-        var imageView = UIImageView(frame: menuItemFrame)
+        let imageView = UIImageView(frame: menuItemFrame)
         
         imageView.image = image
         

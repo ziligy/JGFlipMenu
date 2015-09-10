@@ -46,17 +46,17 @@ class JGFlipMenuController: UIViewController, UINavigationControllerDelegate, JG
         // println("front side delegate tag: \(indexTag) title: \(menuItems[indexTag].frontSideTitle.text)")
         
         // get instance using the frontSideTitle.text which MUST be the same a view controller's Storyboard ID
-        if let vc = mainStoryBoard.instantiateViewControllerWithIdentifier(menuItems[indexTag].frontSideTitle.text) as? UIViewController {
+        let vc = mainStoryBoard.instantiateViewControllerWithIdentifier(menuItems[indexTag].frontSideTitle.text) as UIViewController
             
-            // convert the menu item center point that's in the  menu items container to the full view container point
-            transitionAnimation.focalPoint = menuItems[indexTag].superview?.convertPoint(menuItems[indexTag].center, toView: self.view)
-            
-            // keep the current index for fliping the menu back when popped back
-            currentIndex = indexTag
+        // convert the menu item center point that's in the  menu items container to the full view container point
+        transitionAnimation.focalPoint = menuItems[indexTag].superview?.convertPoint(menuItems[indexTag].center, toView: self.view)
+        
+        // keep the current index for fliping the menu back when popped back
+        currentIndex = indexTag
 
-            // push the view controller onto the navigationController's stack
-            navigationController?.pushViewController(vc, animated: true)
-        }
+        // push the view controller onto the navigationController's stack
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     // JGFlipMenuItemDelegate method called when backside of menu is selected
