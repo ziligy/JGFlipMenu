@@ -24,11 +24,11 @@ class JGTransitionExpandContract: NSObject, UIViewControllerAnimatedTransitionin
         
         if self.isPresenting {
             toView.center = (focalPoint == nil) ? toView.center : focalPoint!
-            containerView.addSubview(toView)
+            containerView!.addSubview(toView)
         } else {
             fromView.center = toView.center
-            containerView.addSubview(toView)
-            containerView.addSubview(fromView)
+            containerView!.addSubview(toView)
+            containerView!.addSubview(fromView)
         }
         
         let presentingTransform = CGAffineTransformIdentity
@@ -41,7 +41,7 @@ class JGTransitionExpandContract: NSObject, UIViewControllerAnimatedTransitionin
             delay: 0,
             usingSpringWithDamping: dampingRatio,
             initialSpringVelocity: 0,
-            options: nil,
+            options: [],
             animations: {
                 
                 if self.isPresenting {
@@ -54,7 +54,7 @@ class JGTransitionExpandContract: NSObject, UIViewControllerAnimatedTransitionin
             },
             completion: { finished in
                 
-                containerView.addSubview(toView)
+                containerView!.addSubview(toView)
                 
                 fromView.removeFromSuperview()
                 
@@ -63,7 +63,7 @@ class JGTransitionExpandContract: NSObject, UIViewControllerAnimatedTransitionin
         )
     }
     
-    internal func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    internal func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return duration
     }
 }

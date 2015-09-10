@@ -14,7 +14,7 @@ protocol JGFlipMenuItemDelegate{
 }
 
 @IBDesignable class JGFlipMenuItem: UIView,  UITextViewDelegate {
-    
+
     internal var delegate: JGFlipMenuItemDelegate?
     
     internal var frontSideTitle: UITextView!
@@ -32,7 +32,7 @@ protocol JGFlipMenuItemDelegate{
     @IBInspectable  var frontImage: UIImage=UIImage() {
         didSet  {
             self.frontSideImageView.image = self.frontImage
-        }
+               }
     }
     
     @IBInspectable  var backImage: UIImage=UIImage() {
@@ -54,7 +54,7 @@ protocol JGFlipMenuItemDelegate{
             backSideTitle = setTextConditionals(backSideTitle)
         }
     }
-    
+
     @IBInspectable var centerHorizontal: Bool = true {
         didSet {
             frontSideTitle = setTextConditionals(frontSideTitle)
@@ -72,8 +72,7 @@ protocol JGFlipMenuItemDelegate{
     @IBInspectable var panelFrontColor: UIColor = UIColor.whiteColor() {
         didSet {
             frontSideView.backgroundColor = panelFrontColor
-            
-            
+            self.backgroundColor = panelFrontColor
         }
     }
     
@@ -117,7 +116,7 @@ protocol JGFlipMenuItemDelegate{
         setup()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -141,7 +140,7 @@ protocol JGFlipMenuItemDelegate{
         
         if self.frontFacing {return}
         
-        let transitionOptions = UIViewAnimationOptions.TransitionFlipFromLeft | .OverrideInheritedOptions | .AllowAnimatedContent
+        let transitionOptions: UIViewAnimationOptions = [UIViewAnimationOptions.TransitionFlipFromLeft, .OverrideInheritedOptions, .AllowAnimatedContent]
         
         UIView.transitionFromView(backSideView, toView: frontSideView, duration: 0.5, options: transitionOptions,
             
@@ -152,7 +151,7 @@ protocol JGFlipMenuItemDelegate{
     }
     
     // user touched! & dont allow textview editing
-    internal func textViewShouldBeginEditing(textView: UITextView!)->Bool {
+    internal func textViewShouldBeginEditing(textView: UITextView)->Bool {
         if frontFacing {
             flipToBackSide()
         } else {
@@ -180,7 +179,7 @@ protocol JGFlipMenuItemDelegate{
         self.backSideView.addSubview(backSideImageView)
         self.backSideView.addSubview(backSideTitle)
         self.addSubview(backSideView)
-        
+            
         self.frontSideView.addSubview(frontSideImageView)
         self.frontSideView.addSubview(frontSideTitle)
         self.addSubview(frontSideView)
@@ -194,17 +193,17 @@ protocol JGFlipMenuItemDelegate{
         textView.text = text
         
         textView = setTextConditionals(textView)
-        
+    
         return textView
     }
     private func makeImage(image: UIImage)-> UIImageView {
-        var imageView = UIImageView(frame: menuItemFrame)
+        let imageView = UIImageView(frame: menuItemFrame)
         
         imageView.image = image
         
         return imageView
     }
-    
+
     
     private func setTextConditionals(textView: UITextView)-> UITextView {
         
